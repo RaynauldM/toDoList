@@ -1,0 +1,38 @@
+p {
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  .header {
+    margin-bottom: 7vh;
+  }
+
+  .new-item-container {
+    margin-bottom: 7vh;
+  }
+
+  .list {
+    border-radius: 5px;
+    border: black solid 1px;
+    padding-left: 0;
+
+    .li-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px black solid;
+      padding-left: 1em;
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.no-border {
+  border: none;
+}
